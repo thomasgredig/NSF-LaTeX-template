@@ -1,0 +1,100 @@
+% %%%%%%%%%%%%%%%%%
+% (c) 2019-2020 Thomas Gredig
+% NSF PROPOSAL: D-Description
+% https://www.github.com/thomasgredig/
+% %%%%%%%%%%%%%%%%%
+\documentclass{proposal}
+\usepackage{lipsum}
+\usepackage{mathptmx}
+\usepackage{amsmath,amssymb,amsfonts}
+
+% Graphics
+\usepackage{graphicx}% Include figure files
+\graphicspath{{./fig/}}
+
+
+% chemical formulas
+\usepackage[version=4]{mhchem}
+
+% for MindMap
+\usepackage{tikz}
+\usetikzlibrary{mindmap,shadows}
+
+% Bibliography
+% -----------------
+% Use Zotero with BetterBib option, see configuration at:
+% https://github.com/thomasgredig/MSthesis-Guidelines#better-bibtex
+%\bibliographystyle{alphaurl}
+%\bibliographystyle{plain}
+\bibliographystyle{aip_99ti}
+
+\renewcommand{\refname}{\centerline{References cited}}
+
+% this handles hanging indents for publications
+\def\rrr#1\\{\par
+\medskip\hbox{\vbox{\parindent=2em\hsize=6.12in
+\hangindent=4em\hangafter=1#1}}}
+\def\baselinestretch{1}
+\let\oldtimess\times
+\renewcommand{\times}{\; x \;}
+
+% Hyphenation
+\hyphenation{}
+
+
+
+
+\begin{document}
+
+%\author{Thomas Gredig, Professor \\
+%\small Department of Physics and Astronomy, \\
+%\small California State University Long Beach, \\
+%\small 1250 Bellflower Blvd., Long Beach, CA 90840-9505}
+
+\author{Thomas Gredig}
+\title{D. Project Description}
+%\date{\today}
+\pagenumbering{arabic}
+\renewcommand{\thepage} {D--\arabic{page}}
+\renewcommand\thesection{\alph{section}.}
+\renewcommand\thesubsection{\alph{section}.\arabic{subsection}} %\roman{subsection}}
+
+
+  \begin{center}\leavevmode
+    \normalfont
+    { D. Project Description }%
+  \end{center}%
+
+%\rule[raise-height]{width}{thickness}
+
+
+
+\section{Part 1}
+
+\noindent
+We cite our work \cite{Nguyen_Synthesis_2020,Bartolome_Molecular_2015,Bartolome_Quadrupolar_2015,Ekstrand_Tunable_2017,Gredig_Height-Height_2013,Tran_Low-temperature_2018,Gredig_Asymmetric_2008}.
+
+\section{Part 2}
+
+\noindent
+\lipsum[2]
+
+\section{Broader Impacts} 
+
+\lipsum[3]
+
+\section{ Management Plan }
+
+\lipsum[4]
+
+
+% ************************** BIBLIOGRAPHY **********************************
+\clearpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\renewcommand{\thepage} {E--\arabic{page}}
+
+
+\bibliography{myZoteroLibrary,myZoteroLibrary2} 
+
+\end{document}
